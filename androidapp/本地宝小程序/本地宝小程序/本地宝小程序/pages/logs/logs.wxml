@@ -1,0 +1,53 @@
+<!--logs.wxml-->
+<!-- 框 -->
+<!-- 购物车 -->
+<view class="card">
+  <!-- 购物车上部分 -->
+  <view class="card-top clearfix">
+    <button size="mini" bindtap="handleEdit">{{editTest}}</button>
+  </view>
+  <!-- 购物车内容 -->
+  <view class="card-content">
+    <view class="card-content-item" wx:for="{{cartList}}" wx:key="index">
+      <radio-group class="singleCheck">
+        <radio checked="{{item.singleChecked}}" data-index="{{index}}" bindtap="handleSingleCheck"></radio>
+      </radio-group>
+
+      <view class="infos">
+        <image src="{{item.img}}"></image>
+        <view class="introduce">
+          <view class="context">{{item.info}}</view>
+          <view class="price">￥{{item.price}}</view>
+        </view>
+        <!-- 计数器 -->
+        <view class="calc">
+          <button>-</button>
+          <input value="{{item.num}}"></input>
+          <button>+</button>
+        </view>
+
+      </view>
+
+
+      <!-- 删除 -->
+      <view class="singleDel" wx:if="{{item.singleChecked}}">
+        <button type="warn">-</button>
+      </view>
+    </view>
+  </view>
+  <!-- 购物车地下 -->
+  <view class="card-bottom">
+    <radio-group class="checkAll">
+      <radio checked="{{checkTrue}}" bindtap="handleAll">全选</radio>
+    </radio-group>
+
+    <view class="jiesuan" wx:if="{{editTest=='编辑'}}">
+      <text>总价￥{{allPrice}}</text>
+      <button type="warn" size="mini">结算</button>
+    </view>
+
+    <view class="jiesuan" wx:if="{{editTest=='完成'}}">
+      <button type="warn" size="mini">删除</button>
+    </view>
+  </view>
+</view>

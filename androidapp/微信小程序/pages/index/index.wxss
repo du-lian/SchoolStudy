@@ -1,0 +1,349 @@
+page {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+/* 轮播图 */
+
+.nav {
+  height: 422rpx;
+  width: 750rpx;
+}
+
+.nav swiper {
+  height: 422rpx;
+  width: 750rpx;
+}
+
+.slide-image {
+  height: 422rpx;
+  width: 750rpx;
+}
+
+/* 接口部分 */
+
+.entry {
+  height: 188rpx;
+  width: 750rpx;
+  padding: 40rpx 0 10rpx;
+}
+
+.entry-list {
+  display: flex;
+  text-align: center;
+}
+
+.entry-list-item {
+  width: 25%;
+  border-right: 1rpx solid #ccc;
+}
+
+.entry-list-item:last-child {
+  border-right: none;
+}
+
+.entry-list-item-image {
+  height: 78rpx;
+  width: 82rpx;
+}
+
+.entry-list-item-title {
+  padding-top: 6rpx;
+}
+
+/* 手机软件 */
+
+.softward {
+  margin: 50rpx 0 40rpx 0;
+  width: 750rpx;
+}
+
+.intelligent-title, .softward-title ,.user-title{
+  width: 720rpx;
+  height: 72rpx;
+  margin-left: 30rpx;
+  font-size: 48rpx;
+  color: #333;
+}
+
+.softward-list {
+  width: 750rpx;
+  height: 626rpx;
+  display: flex;
+  flex-flow: wrap;
+  flex: 1;
+}
+
+.softward-list-item {
+  width: 23%;
+  margin: 40rpx 0 0 15rpx;
+  text-align: center;
+}
+
+.softward-list-item-image {
+  width: 96rpx;
+  height: 96rpx;
+}
+
+.softward-list-item-title {
+  width: 170rpx;
+  height: 44rpx;
+  margin-top: 10rpx;
+}
+
+.softward-list-item-size {
+  font-size: 30rpx;
+  color: #cdcdcd;
+  width: 170rpx;
+  height: 44rpx;
+  margin-top: 10rpx;
+}
+
+.softward-list-item-download {
+  line-height: 50rpx;
+  width: 100rpx;
+  font-size: 30rpx;
+  color: #23ac38;
+  background: #def3e1;
+  border-radius: 25rpx;
+  margin: 10rpx 26rpx 0 26rpx;
+}
+
+/* 手机软件的小图标 */
+
+.softward-row-list {
+  width: 750rpx;
+  height: 306rpx;
+  display: flex;
+  flex-flow: wrap;
+  flex: 1;
+  margin: 60rpx 0;
+}
+
+.softward-row-list-item {
+  width: 168rpx;
+  height: 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1rpx solid #ccc;
+  padding: 20rpx 0rpx;
+  margin: 0 9rpx;
+}
+
+.softward-row-list-image {
+  width: 34rpx;
+  height: 34rpx;
+  margin: 0 8rpx;
+}
+
+.softward-row-list-title {
+  font-size: 24rpx;
+}
+
+/* 智能硬件 */
+
+.intelligent {
+  margin: 50rpx 0 0 0;
+  width: 750rpx;
+}
+
+.intelligent-capacity-list-top {
+  display: flex;
+  border-top: 1px solid #ebebeb;
+}
+
+.intelligent-capacity-list-top-left {
+  border-right: 1px solid #ebebeb;
+}
+
+.intelligent-capacity-list-top-right-botton {
+  border-top: 1px solid #ebebeb;
+}
+
+.intelligent-capacity-list-title {
+  width: 326rpx;
+  height: 92rpx;
+  font-size: 32rpx;
+  margin: 40rpx 0 0 38rpx;
+}
+
+.intelligent-capacity-list-dis {
+  width: 336rpx;
+  height: 40rpx;
+  font-size: 28rpx;
+  color: #999;
+  margin: 10rpx 0 0 38rpx;
+}
+
+.intelligent-capacity-list-price {
+  width: 336rpx;
+  height: 46rpx;
+  font-size: 32rpx;
+  color: #f13228;
+  margin: 20rpx 0 0 38rpx;
+}
+
+.intelligent-capacity-list-img {
+  width: 270rpx;
+  height: 180rpx;
+}
+
+.intelligent-capacity-list-right-title {
+  width: 336rpx;
+  height: 46rpx;
+  font-size: 32rpx;
+  margin: 40rpx 0 0 38rpx;
+}
+
+.intelligent-capacity-list-right-dis {
+  width: 206rpx;
+  height: 80rpx;
+  font-size: 28rpx;
+  color: #999;
+  padding-left: 20rpx;
+  margin: 10rpx 0 0 20rpx;
+}
+
+.intelligent-capacity-list-right-img {
+  width: 168rpx;
+  height: 112rpx;
+}
+
+.intelligent-capacity-list-right-price {
+  width: 206rpx;
+  height: 46rpx;
+  font-size: 30rpx;
+  color: #f13228;
+  padding-left: 20rpx;
+  margin: 20rpx 0 0 20rpx;
+}
+
+.intelligent-capacity-list-button {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.intelligent-capacity-list-button-item {
+  border-top: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+}
+
+.intelligent-capacity-list-button-item:nth-child(2) {
+  border-right: none;
+}
+
+.intelligent-capacity-list-button-item-more {
+  margin: auto;
+  width: 372rpx;
+  height: 490rpx;
+  background-color: #f8f8f8;
+}
+
+.intelligent-capacity-list-more {
+  width: 372rpx;
+  line-height: 400rpx;
+}
+
+/* 用户服务 */
+.user{
+  width: 750rpx;
+  height: 478rpx;
+  margin: 50rpx  0 40rpx 0;
+}
+
+.user-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.user-list-item{
+  width: 233rpx;
+  height: 112rpx;
+  margin: 8rpx;
+  background: #f8f8f8;
+  border: 1rpx solid #ebebeb;
+  
+}
+
+.user-list-item-title{
+  width: 230rpx;
+  line-height: 112rpx;
+  font-family: "微软雅黑";
+  text-align: center;
+  color: #333333;
+  
+}
+
+/* 底部 */
+.footer{
+  width: 750rpx;
+  height: 428rpx;
+  margin: 50rpx 0 40rpx 0;
+}
+
+.footer-search{
+  width: 676rpx;
+  height: 80rpx;
+  border: 1rpx solid #00be3c;
+  margin: 40rpx;
+  position: relative;
+}
+
+.footer-search-icon{
+  position: absolute;
+  right: 146rpx;
+  top:18rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.footer-search-text{
+  width: 446rpx;
+  height: 78rpx;
+  line-height: 78rpx;
+  margin-left:20rpx; 
+}
+
+.footer-search-btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #00be3c;
+  width: 146rpx;
+  line-height: 78rpx;
+  color: #fff;
+  padding: 2rpx 12rpx;
+  font-size: 28rpx;
+}
+
+.foot-list{
+  width: 600rpx;
+  height: 42rpx;
+  margin: 80rpx 76rpx;
+  display: flex;
+  text-align: center;
+}
+
+.foot-list-item{
+  width: 144rpx;
+  height: 42rpx;
+  border-right: 1rpx solid #666666;
+}
+
+.foot-list-item:last-child{
+  border-right: none;
+}
+
+.footer-dis{
+  width: 750rpx;
+  height: 42rpx;
+  padding: 30rpx 0;
+  margin: 80rpx 0;
+  text-align: center;
+  background: #f6f6f6;
+}

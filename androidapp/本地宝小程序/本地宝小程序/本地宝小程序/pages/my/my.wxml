@@ -1,0 +1,47 @@
+<!--pages/my/my.wxml-->
+<view class="myPage">
+  <!-- 头像 -->
+  <view class="header">
+    <image class="header-image" src="/image/weizhi.png"></image>
+
+  </view>
+  <!-- 阴影 -->
+  <view class="shadow"></view>
+
+  <view class="myPage-item">
+    个人资料
+    <image class="myPage-item-image" src="/image/right.png"></image>
+  </view>
+
+  <view class="myPage-item">
+    我的优惠卷
+    <image class="myPage-item-image" src="/image/right.png"></image>
+    </view>
+    <!-- 阴影 -->
+    <view class="shadow"></view>
+
+    <view class="myPage-item">
+      常见问题
+      <image class="myPage-item-image" src="/image/right.png"></image>
+    </view>
+    <view class="myPage-item">
+      使用条款
+      <image class="myPage-item-image" src="/image/right.png"></image>
+      </view>
+      <view class="myPage-item">
+        隐藏权政策
+        <image class="myPage-item-image" src="/image/right.png"></image>
+      </view>
+      <view class="myPage-item">
+        联系客服
+        <image class="myPage-item-image" src="/image/right.png"></image>
+      </view>
+
+      <!-- 阴影 -->
+      <view class="shadow"></view>
+
+      <view class="myPage-item">
+        设置
+        <image class="myPage-item-image" src="/image/right.png"></image>
+      </view>
+    </view>

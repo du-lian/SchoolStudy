@@ -1,0 +1,124 @@
+.card {
+  min-height: 100vh;
+  background-color: #eee;
+}
+
+.card .card-top {
+  background-color: #fff;
+}
+
+.card .card-top button {
+  margin: 10rpx;
+  float: right;
+}
+
+/* 购物车内容 */
+
+.card .card-content .card-content-item {
+  display: flex;
+  padding: 20rpx 20rpx 20rpx 0;
+  position: relative;
+  flex: 1;
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+
+.card .card-content .card-content-item .singleCheck {
+  padding: 0 40rpx;
+  display: flex;
+  align-items: center;
+}
+
+.card .card-content .card-content-item .infos {
+  display: flex;
+  padding: 20rpx 20rpx 20rpx 0;
+  position: relative;
+  flex: 1;
+}
+
+.card .card-content .card-content-item .infos  image {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.card .card-content .card-content-item .infos  .introduce {
+  padding-left: 20rpx;
+  width: 350rpx;
+}
+
+.card .card-content .card-content-item .introduce .context {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.card .card-content .card-content-item .introduce .price {
+  color: red;
+}
+
+/* 计数器部分 */
+
+.card .card-content .card-content-item .infos .calc {
+  display: flex;
+  position: absolute;
+  width: 200rpx;
+  right: 40rpx;
+  bottom: 20rpx;
+  border: 1px solid #ccc;
+}
+
+.card .card-content .card-content-item .infos .calc input {
+  flex: 1;
+  text-align: center;
+}
+
+.card .card-content .card-content-item .infos .calc button {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.card .card-content .card-content-item .singleDel {
+  display: flex;
+  align-items: center;
+  padding-right: 20rpx;
+}
+
+.card .card-content .card-content-item .singleDel button {
+  width: 50rpx;
+  height: 50rpx;
+  color: #fff;
+}
+
+/* 底部 */
+
+.card .card-bottom {
+  display: flex;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding: 20rpx 20rpx 20rpx 0;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.card .card-bottom .checkAll {
+  padding: 0 40rpx;
+  display: flex;
+  align-items: center;
+}
+
+.card .card-bottom .jiesuan {
+  display: flex;
+}
+
+.card .card-bottom .jiesuan text {
+  display: flex;
+  align-items: center;
+}
+
+.card .card-bottom .jiesuan button {
+  margin-left: 10rpx;
+}

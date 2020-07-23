@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="bendibao">
+  <!-- 轮播图 -->
+  <view class="nav">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item.image}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!-- 服务列表 -->
+  <view class="server">
+    <view class="server-list">
+      <block wx:for="{{serverArray}}" wx:key="index">
+        <view class="server-item" bindtap="gotoPage" data-id="{{item.id}}" data-name="{{item.name}}">
+          <image class="server-item-img" src="{{item.icon}}"/>
+          <view class="server-item-text" >{{item.name}}</view>
+        </view>
+      </block>
+    </view>
+
+  </view>
+
+  <!-- 特产好物 -->
+  <view class="product">
+    <view class="title">特产好物</view>
+    <view class="product-list">
+      <navigator url="/pages/productDetail/productDetail?id={{item.id}}&title={{item.title}}"  class="pro-list-item" wx:for="{{productList}}" wx:key="index">
+        <image  src="{{item.imgurl}}"></image>
+        <view class="content">
+          <view class="info">{{item.info}}</view>
+          <view class="price">
+            <text>￥{{item.price}}</text>
+            <text>￥{{item.oldPrice}}</text>
+          </view>
+        </view>
+      </navigator> 
+     
+    </view>
+  </view>
+</view>
+
+  <!-- 广告 -->
+<view class="advertising">
+  <view class="advertising-item recommend">商家推荐</view>
+  <view class="advertising-item forum">交友论坛</view>
+</view>

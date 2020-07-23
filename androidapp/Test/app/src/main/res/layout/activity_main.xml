@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_top_linlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/reddemo"
+        android:orientation="horizontal">
+        
+
+
+        //本地音乐和菜单按钮布局
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                 <!--菜单按钮-->
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/main_menu_imgv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/ic_menu" />
+                <!--本地音乐按钮-->
+                <TextView
+                    android:clickable="true"
+                    android:id="@+id/main_logic_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/local_music"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <!--在线音乐和搜索框布局-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--在线音乐按钮-->
+                <TextView
+                    android:clickable="true"
+                    android:id="@+id/main_online_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/online_music"
+                    android:textColor="@color/white_60P"
+                    android:textSize="20dp" />
+                <!--搜索按钮-->
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/main_search_imgv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/ic_menu_search" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--列表-->
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            >
+
+        </android.support.v4.view.ViewPager
+            >
+        <!--<include layout="@layout/bottom"></include>-->
+        <!--   引入播放栏-->
+        <include
+            layout="@layout/music__play_bar"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"/>
+
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

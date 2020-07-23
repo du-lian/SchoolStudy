@@ -1,0 +1,81 @@
+/* pages/list/list.wxss */
+
+.detail {
+  width: 750rpx;
+  background-color: #fff;
+}
+
+.detail .detail-item {
+  height: 244rpx;
+  width: 750rpx;
+  border-bottom: 1px solid #e5e5e5;
+  /* background-color: #ffff00; */
+  position: relative;
+}
+
+.detail .detail-item .detail-item-box {
+  display: flex;
+  height: 200rpx;
+  width: 750rpx;
+  /* background-color: #ff22ff; */
+  position: absolute;
+  top: 20rpx;
+}
+
+.detail .detail-item .detail-item-box .detail-item-left {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.detail .detail-item .detail-item-box .detail-item-left .detail-item-left-image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.detail .detail-item .detail-item-box .detail-item-right {
+  width: 530rpx;
+  height: 200rpx;
+  padding: 10rpx;
+}
+
+.detail .detail-item .detail-item-box .detail-item-right .detail-item-right-title {
+  font-size: 18px;
+  display: flex;
+}
+
+.detail .detail-item .detail-item-box .detail-item-right .detail-item-right-title .text{
+  width: 348rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+.detail .detail-item .detail-item-box .detail-item-right .detail-item-right-title .star{
+  position: absolute;
+  top: 0px;
+ right: 0;
+  
+}
+
+.detail .detail-item .detail-item-box .detail-item-right .detail-item-right-title .star view:first-child{
+  color: #ccc;
+}
+.detail .detail-item .detail-item-box .detail-item-right .detail-item-right-title .star view:last-child{
+color: orange;
+position: absolute;
+top: 0;
+
+overflow: hidden;
+}
+
+
+
+
+.detail .detail-item .detail-item-box .detail-item-right .item {
+  font-size: 16px;
+  color: #a3a3a3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,51 @@
+/* pages/my/my.wxss */
+
+/* 头部 */
+.myPage{
+  height: 100vh;
+  background-color:  #e9f1ef;
+}
+
+.myPage .header{
+  height: 344rpx;
+  width: 750rpx;
+  background-color: #65cdff;
+  text-align: center;
+  
+}
+
+.myPage .header .header-image{
+  width: 168rpx;
+  height: 168rpx;
+  border: 1px solid #ffffff;
+  border-radius: 84rpx;
+  margin-top: 60rpx;
+}
+
+/* 阴影 */
+
+.myPage .shadow{
+  height: 32rpx;
+  width: 750rpx;
+  background-color: #e9f1ef;
+}
+
+/* 列表 */
+.myPage .myPage-item{
+  height: 88rpx;
+  width: 750rpx;
+  background-color: #ffffff;
+  padding: 0 20rpx;
+  position: relative;
+  line-height: 88rpx;
+  border-bottom: 1px solid #e9f1ef;
+  color: #5e646f;
+}
+ 
+.myPage .myPage-item .myPage-item-image{
+  height: 40rpx;
+  width: 40rpx;
+  position: absolute;
+  right: 40rpx;
+  bottom: 30rpx;
+}

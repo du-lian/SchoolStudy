@@ -1,0 +1,44 @@
+<MKM version="2.0" imageFileUrl="file:///D:/androidapp/%e5%8c%bb%e7%96%97%e5%b0%8f%e7%a8%8b%e5%ba%8f/1%e3%80%81%e9%a6%96%e9%a1%b5.png">
+  <Marks>
+    <LengthMark direction="3" color="16711680" length="53" x="205" y="48"/>
+    <TextMark defaultDirection="9" direction="9" color="16711680" x="227" y="72" textMaxWidth="100" offsetX="25" offsetY="10" text="header"/>
+    <LengthMark direction="3" color="16711680" length="16" x="119" y="103"/>
+    <LengthMark direction="3" color="16711680" length="35" x="251" y="119"/>
+    <LengthMark direction="12" color="16711680" length="346" x="34" y="136"/>
+    <TextMark defaultDirection="9" direction="5" color="16711680" x="338" y="138" textMaxWidth="100" offsetX="25" offsetY="10" text="search"/>
+    <LengthMark direction="3" color="16711680" length="138" x="165" y="169"/>
+    <LengthMark direction="12" color="16711680" length="306" x="53" y="199"/>
+    <LengthMark direction="3" color="16711680" length="62" x="246" y="245"/>
+    <LengthMark direction="3" color="16711680" length="16" x="83" y="153"/>
+    <LengthMark direction="3" color="16711680" length="16" x="83" y="230"/>
+    <LengthMark direction="3" color="16711680" length="16" x="82" y="306"/>
+    <LengthMark direction="3" color="16711680" length="179" x="196" y="322"/>
+    <TextMark defaultDirection="9" direction="9" color="16711680" x="275" y="414" textMaxWidth="100" offsetX="25" offsetY="10" text="banner "/>
+    <LengthMark direction="3" color="16711680" length="110" x="49" y="516"/>
+    <LengthMark direction="3" color="16711680" length="16" x="29" y="501"/>
+    <LengthMark direction="3" color="16711680" length="16" x="35" y="626.5"/>
+    <LengthMark direction="3" color="16711680" length="27" x="52" y="643"/>
+    <LengthMark direction="3" color="16711680" length="27" x="38" y="517"/>
+    <LengthMark direction="3" color="16711680" length="19" x="74" y="669"/>
+    <LengthMark direction="3" color="16711680" length="114" x="88" y="684"/>
+    <LengthMark direction="3" color="16711680" length="18" x="162" y="797"/>
+    <LengthMark direction="3" color="16711680" length="14" x="182" y="784"/>
+    <LengthMark direction="3" color="16711680" length="10" x="174" y="705"/>
+    <LengthMark direction="3" color="16711680" length="86" x="160" y="1377"/>
+    <LengthMark direction="3" color="16711680" length="80" x="84" y="1380"/>
+    <LengthMark direction="12" color="16711680" length="344" x="36.5" y="1413"/>
+    <LengthMark direction="12" color="16711680" length="150" x="48" y="1902"/>
+    <LengthMark direction="12" color="16711680" length="22" x="197" y="1879"/>
+    <LengthMark direction="3" color="16711680" length="8" x="108" y="1967"/>
+    <LengthMark direction="3" color="16711680" length="50" x="95" y="1974"/>
+    <LengthMark direction="3" color="16711680" length="6" x="64" y="2006"/>
+    <LengthMark direction="3" color="16711680" length="82" x="209" y="2925"/>
+    <LengthMark direction="3" color="16711680" length="8" x="245" y="2917"/>
+    <LengthMark direction="3" color="16711680" length="101" x="192" y="2817"/>
+    <LengthMark direction="12" color="16711680" length="82" x="47" y="2849"/>
+    <LengthMark direction="12" color="16711680" length="194" x="152" y="2838"/>
+    <LengthMark direction="3" color="16711680" length="16" x="173" y="2732"/>
+    <LengthMark direction="3" color="16711680" length="44" x="262" y="2757"/>
+    <LengthMark direction="3" color="16711680" length="110" x="48" y="2243"/>
+  </Marks>
+</MKM>

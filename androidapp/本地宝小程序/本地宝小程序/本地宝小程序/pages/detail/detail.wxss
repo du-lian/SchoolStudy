@@ -1,0 +1,44 @@
+/* pages/detail/detail.wxss */
+.detail{
+  min-height: 100vh;
+  background-color: #eee;
+}
+.detail image{
+  width: 100vw;
+  height: 400rpx;
+}
+.infos{
+  margin-top: 20rpx;
+  background-color: #fff;
+  padding: 20rpx;
+  font-size: 14px;
+}
+.infos .title{
+  font-size: 16px;
+}
+/* 评论部分 */
+.box-list .list{
+  margin-top: 20rpx;
+  padding: 20rpx;
+  background-color: #fff;
+}
+.box-list .list .user{
+  display: flex;
+  justify-content: space-between;
+}
+.box-list .list .user-time{
+  display: flex;
+  /* 修改flex布局的默认方向 column: 纵轴 */
+  flex-direction: column;
+   /* flex布局默认主轴是水平方向的，那么justify-content: 就是调整主轴的对齐方式 */
+  /* 以前，在默认主轴的方式是水平的时候，align-items:调整测轴的对齐方式  */
+  /* 现在主轴是纵向，那么 align-items调整的就是水平方向 */
+  align-items: flex-end;
+  font-size: 12px;
+}
+.box-list .list .user-left{
+  font-size: 16px;
+}
+.box-list .list .user-time text:nth-child(1){
+  color: red;
+}

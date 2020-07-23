@@ -1,0 +1,31 @@
+<!-- 头部 -->
+<view class="fixsearch">
+  <view class="bar">
+    <view class="icon-back">
+      <image  class="icon-back-img" src="https://mall.360.cn/resource/img/m/public/icon-back-black.png"></image> 
+    </view>
+    <input  type="text" class="btn-search"></input>
+  </view>
+</view>
+
+<!-- 内容 -->
+<view class="search-result">
+<!-- 搜索不到 -->
+<view class="empty-prompt">
+  <view class="prompt">您搜的“路由器”没有找到</view>
+  <view class="recommendation">为你推荐</view>
+</view>
+<view class="toolbar"></view>
+<view class="grid">
+  <block wx:for="{{list}}" wx:key="index">
+  <view class="grid-item">
+    <image class="grid-item-img" src="{{item.img}}"></image>
+
+    <view class="grid-item-titel">{{item.title}}</view>
+
+    <view class="grid-item-price">￥ {{item.price/100}}</view>
+  </view>
+  
+  </block>
+</view>
+</view>

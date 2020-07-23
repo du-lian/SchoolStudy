@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/my/my",
+    "pages/detail/detail",
+    "pages/list/list",
+    "pages/productDetail/productDetail"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#65cdff",
+    "navigationBarTitleText": "本地宝小程序",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/home1.png",
+        "selectedIconPath": "image/home.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "购物车",
+        "iconPath": "image/i-message1.png",
+        "selectedIconPath": "image/i-message.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "image/my1.png",
+        "selectedIconPath": "image/my.png"
+      }
+    ]
+  }
+}

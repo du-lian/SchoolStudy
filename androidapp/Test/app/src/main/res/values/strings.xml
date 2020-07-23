@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">gdcp音乐</string>
+    <string name="local_music">本地音乐</string>
+    <string name="online_music">在线音乐</string>
+    <string name="menu_timer">定时停止播放</string>
+    <string name="menu_exit">退出应用</string>
+    <string name="unknown">未知</string>
+
+    <!-- TODO: 标题与NavigationIcon的距离 -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <style name="Toolbar.MyStyle" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">15sp</item>
+    </style>
+</resources>

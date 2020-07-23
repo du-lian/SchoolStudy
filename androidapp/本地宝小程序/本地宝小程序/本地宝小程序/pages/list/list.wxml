@@ -1,0 +1,33 @@
+<!--pages/list/list.wxml-->
+<!-- 详细页面 -->
+<view class="detail">
+  <!-- 详细页面item -->
+  <navigator 
+      url="/pages/detail/detail" class="shopArray" wx:for="{{shopArray}}" wx:key="index"
+      data-listdetail="{{item}}"
+      bindtap="handleGetDetail"
+      >
+    <view class="detail-item">
+      <view class="detail-item-box">
+        <view class="detail-item-left">
+          <image class="detail-item-left-image" src="{{item.images[0]}}"></image>
+        </view>
+        <view class="detail-item-right">
+          <view class="detail-item-right-title">
+            <view class="text">{{item.name}}</view>
+            <view class="star">
+              <view>★★★★★</view>
+              <view style="width:{{item.score}}%">★★★★★</view>
+            </view>
+          </view>
+          <view class="detail-item-right-phone item">电话：{{item.phone}}</view>
+          <view class="detail-item-right-adress item">{{item.address}}</view>
+          <view class="detail-item-right-time item">{{item.businessHours}}</view>
+        </view>
+
+      </view>
+
+    </view>
+  </navigator>
+
+</view>

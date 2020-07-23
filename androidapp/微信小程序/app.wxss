@@ -1,0 +1,29 @@
+page{
+  font-size: 28rpx;
+  color: #333333;
+  height: 100%;
+}
+
+.header{
+  width: 750rpx;
+  height: 130rpx;
+  background-color: #23ac38;
+  text-align: center;
+}
+
+.header-logo{
+  margin-top: 45rpx;
+  width: 166rpx;
+  height: 64rpx;
+  margin-left: 15rpx;
+  position: absolute;
+  left: 0;
+}
+
+
+
+.spiler{
+  width: 750rpx;
+  height: 20rpx;
+  background-color: #cecece;
+}

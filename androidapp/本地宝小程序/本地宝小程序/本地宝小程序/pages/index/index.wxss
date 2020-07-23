@@ -1,0 +1,148 @@
+/**index.wxss**/
+.bendibao{
+  width: 750rpx;
+}
+/* 轮播图 */
+
+.nav {
+  height: 444rpx;
+  width: 750rpx;
+}
+
+.nav swiper{
+  height: 444rpx;
+  width: 750rpx;
+  /* background-color: #ff00ff; */
+}
+
+.nav swiper image{
+  height: 444rpx;
+  width: 750rpx;
+  
+}
+
+
+/* 服务列表 */
+.server{
+  width: 750rpx;
+  height: 462rpx;
+  background-color: #ffffff;
+  /* background-color: #ff00ff; */
+}
+
+.server .server-list{
+  width: 750rpx;
+  height: 462rpx;
+  
+}
+
+.server .server-list .server-item{
+  height: 152rpx;
+  width: 248rpx;
+  border-bottom: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+  float: left;
+  text-align: center;
+  align-content: center;
+  
+}
+
+.server .server-list .server-item .server-item-img{
+  height: 46rpx;
+  width: 54rpx;
+  padding-top: 25rpx;
+}
+
+.server .server-list .server-item .server-item-text{
+  color: #222300;
+}
+
+
+/* 特产好物 */
+/* 特产好物部分 */
+.product{
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+.product .title{
+  height: 80rpx;
+  line-height: 80rpx;
+  /* 左边框 */
+  border-left: 10rpx solid #66cdaa;
+  padding-left: 20rpx;
+}
+.product .product-list{
+  padding: 0 20rpx;
+  display: flex;
+  /* 设置自动换行 */
+  flex-wrap: wrap;
+}
+.product .product-list .pro-list-item{
+  width: 50%;
+  border-bottom: 1px solid #ccc;
+  padding: 20rpx;
+  /* 使用内减模式 */
+  box-sizing: border-box;
+}
+.product .product-list .pro-list-item:nth-last-child(1),
+.product .product-list .pro-list-item:nth-last-child(2){
+  border-bottom: none;
+}
+.product .product-list .pro-list-item image{
+  width: 100%;
+  height: 250rpx;
+}
+.product .product-list .pro-list-item .content .info{
+  font-size: 14px;
+  /* 多行省略号 */
+  display: -webkit-box;    
+  -webkit-box-orient: vertical;
+      /*控制你要产生省略号，达到的行数  */
+  -webkit-line-clamp: 2;    
+  overflow: hidden;
+
+}
+.product-list .pro-list-item .content .price {
+  display: flex;
+  /* 让子元素两端显示 */
+  justify-content: space-between;
+  /* 让子元素垂直方向，居中对齐 */
+  align-items: center;
+}
+.product-list .pro-list-item .content .price text:nth-child(1){
+  color: red;
+}
+.product-list .pro-list-item .content .price text:nth-child(2){
+  color: #ccc;
+  /* 画一条横线 */
+  text-decoration: line-through;
+  font-size: 12px;
+}
+
+
+/* 广告 */
+.advertising{
+  height: 348rpx;
+  width: 750rpx;
+  background-color: #eeeeee;
+}
+
+.advertising .advertising-item{
+  height: 208rpx;
+  width: 302rpx;
+  float: left;
+  text-align: center;
+  line-height: 208rpx;
+  font-size: 20px;
+  color: #ffffff;
+  border-radius: 10px;
+  margin: 36rpx;
+}
+
+.advertising .advertising-item:first-child{
+  background-color: #f67477;
+}
+
+.advertising .advertising-item:last-child{
+  background-color: #a5c6de;
+}

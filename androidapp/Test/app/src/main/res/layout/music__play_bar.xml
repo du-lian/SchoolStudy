@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:id="@+id/fl_play_bar"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        //封面
+        <ImageView
+            android:id="@+id/music_play_bar_cover"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:paddingTop="5dp"
+            android:src="@drawable/play_page_default_cover"/>
+        //唱片和艺术家
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            //标题
+            <TextView
+                android:id="@+id/music_play_bar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="无音乐"
+                android:textSize="16sp"/>
+            //艺术家
+            <TextView
+                android:id="@+id/music_play_bar_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/grey"
+                android:textSize="12sp"/>
+
+
+
+        </LinearLayout>
+
+
+                //播放按钮
+                <ImageView
+                    android:layout_gravity="right"
+
+                    android:id="@+id/music_play_bar_play"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/play_bar_btn_play_pause_selector"/>
+
+
+                //下一首按钮
+                <ImageView
+                    android:layout_gravity="right"
+                    android:id="@+id/music_play_bar_next"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_play_bar_btn_next"/>
+
+                //播放列表按钮
+                <ImageView
+                    android:layout_gravity="right"
+                    android:id="@+id/music_play_bar_playlist"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_play_bar_btn_playlist"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/pb_play_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="bottom"
+        android:progressDrawable="@drawable/seek_bar_progress_style"/>
+
+</FrameLayout>

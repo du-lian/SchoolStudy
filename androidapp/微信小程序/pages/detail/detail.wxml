@@ -1,0 +1,126 @@
+<!-- 返回按钮 -->
+<view class="back" bindtap="backPage">
+  <image class="back-img" src="https://mall.360.cn/resource/img/m/public/icon-gray-back.png"></image>
+</view>
+
+<!-- 轮播图 -->
+<view class="swiper-list">
+  <swiper autoplay indicator-dots>
+    <block wx:for="{{main_item.img_content}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 产品说明 -->
+<view class="product">
+  <button class="product-title-btn" open-type="share">
+    <image class="product-title-btn-img" src="https://mall.360.cn/resource/img/m/public/icon-share.png"></image>
+    <text class="product-title-btn-title">分享</text>
+  </button>
+
+  <view class="product-title-text">{{main_item.title}}</view>
+
+  <view class="product-price">
+    <text class="product-price-symbol">￥</text>
+    <text class="product-price-money">{{main_item.price_sale}}</text>
+  </view>
+</view>
+
+<!-- 分割物 -->
+<view class="spiler"></view>
+
+<!-- 选择部分 -->
+<view class="select">
+  <view class="select-item" >
+    <view class="select-item-label">已选</view>
+    <view class="select-item-desc">{{ctitle}}</view>
+    <view class="select-item-area">
+      <image class="select-item-img" src="https://mall.360.cn/resource/img/m/public/icon-next-big.png"></image>
+    </view>
+
+  </view>
+</view>
+
+
+<!-- 分割物 -->
+<view class="spiler"></view>
+
+
+<!-- 详情信息 -->
+<view class="detail-box">
+  <!-- 详情信息三个导航栏 -->
+  <view class="detail-box-nav-list" >
+    <view class="detail-box-nav-list-item {{1===activeIndex?'item-active':''}} " bindtap="gotoTab" data-index="{{1}}">图片详情</view>
+    <view class="detail-box-nav-list-item {{2===activeIndex?'item-active':''}}" bindtap="gotoTab" data-index="{{2}}">参数规格</view>
+    <view class="detail-box-nav-list-item {{3===activeIndex?'item-active':''}}" bindtap="gotoTab" data-index="{{3}}">购买咨询</view>
+  </view>
+
+  <!-- 模块详细信息 -->
+  <view class="detail-box-container">
+    <!-- 模块的三个板块 -->
+    <!-- 图片详情 -->
+    <view class="detail-box-container-page {{1===activeIndex?'current':''}} " data-tap="{{1}}">
+
+
+    <rich-text nodes="{{content}}"></rich-text>
+
+    </view>
+    <!-- 参数规格 -->
+    <view class="detail-box-container-standard {{2===activeIndex?'current':''}} " data-tap="{{2}}">
+
+
+      <block wx:for="{{main_item.param}}" wx:key="index">
+        <view class="detail-box-container-standard-contant">
+          <rich-text class="detail-box-container-standard-contant-left" nodes="{{item.n}}"></rich-text>
+          <rich-text class="detail-box-container-standard-contant-right" nodes="{{item.v}}">
+        </rich-text>
+        </view>
+      </block>
+
+    </view>
+    <!-- 购买咨询 -->
+    <view class="detail-box-container-qa {{3===activeIndex?'current':''}} " data-tap="{{3}}">
+      <view class="detail-box-container-qa-list">
+        <block wx:for="{{main_item.qa}}" wx:key="index">
+          <view class="detail-box-container-qa-list-item">
+            <view class="detail-box-container-qa-list-q">
+              {{item.q}}
+            </view>
+            <view class="detail-box-container-qa-list-a">
+              {{item.a}}</view>
+          </view>
+
+        </block>
+
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 分割物 -->
+<view class="spiler"></view>
+
+
+<!-- 填充 -->
+<view class="bottom-padding"></view>
+<!-- 底部部分 -->
+<view class="botton">
+  <view class="botton-like">
+    <image class="botton-like-img" src="https://mall.360.cn/resource/img/m/cart/love-empty.png"></image>
+    <view class="botton-like-title">喜欢</view>
+  </view>
+
+
+  <view class="botton-cart">
+    <image class="botton-cart-img" src="https://mall.360.cn/resource/img/m/cart/cart-black.png"></image>
+    <view class="botton-cart-title">购物车</view>
+
+  </view>
+  <view class="botton-btn">
+    <view class="botton-btn-title">加入购物车</view>
+  </view>
+</view>
+

@@ -1,0 +1,96 @@
+/* pages/productDetail/productDetail.wxss */
+.productDetail{
+  min-height: 100vh;
+  background-color: #eee;
+  padding-bottom: 80rpx;
+}
+.productDetail .img{
+  padding: 20rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.productDetail .img image{
+  width: 500rpx;
+  height: 500rpx;
+  display: block;
+  margin: 0 auto;
+}
+.productDetail .img .price text{
+  color: red;
+}
+.productDetail .img .price text:nth-child(1){
+  font-size: 12px;
+}
+
+/* 评论部分 */
+.content-box{
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+.content-box .title{
+  border-left: 10rpx solid #66cdaa;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 20rpx;
+}
+.content-box .list-box{
+  padding: 0 20rpx;
+}
+.content-box .list-box .list{
+  border-bottom: 1px solid #ccc;
+  padding: 20rpx 0;
+}
+.content-box .list-box .list .users{
+  display: flex;
+  justify-content: space-between;
+  color: #ccc;
+  font-size: 12px;
+}
+.content-box .list-box .list .users .time{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.content-box .list-box .list:last-child{
+  border-bottom:none;
+}
+/* 加入购物车部分 */
+.add-cart-box{
+  display: flex;
+  height: 80rpx;
+  position: fixed;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  bottom: 0;
+}
+.add-cart-box .num{
+  display: flex;
+  flex: 2;
+   margin-right: 30rpx;
+}
+.add-cart-box .num input{
+  flex:1;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 14px;
+  text-align: center;
+}
+ 
+.add-cart-box .num  button{
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.add-cart-box > button{
+  flex: 1;
+  height: 80rpx;
+   line-height: 80rpx;
+   font-size: 14px;
+   color:#fff;
+}
+.add-cart-box .add-cart{
+  background-color: orange;
+}
+.add-cart-box .buy{
+  background-color: orangered;
+}

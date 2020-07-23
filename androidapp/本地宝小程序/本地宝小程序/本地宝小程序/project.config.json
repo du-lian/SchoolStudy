@@ -1,0 +1,80 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.8.3",
+	"appid": "wx6f582d98fa1fd43f",
+	"projectname": "Locally",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": 0,
+					"name": "我的",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "详细页面",
+					"pathName": "pages/detail/detail",
+					"query": "1&title=美食",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "card",
+					"pathName": "pages/logs/logs",
+					"scene": null
+				}
+			]
+		}
+	}
+}

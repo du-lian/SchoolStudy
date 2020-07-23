@@ -1,0 +1,28 @@
+<html>
+<body>
+hello world<br>
+<input type="button" onclick="callJS()"
+       value="callJS"><br>
+
+<input type="button" onclick="callAndroid()"
+       value="调用安卓的方法"><br>
+
+<input type="button" onclick="jumpActivity()"
+       value="打开安卓的Activity"><br>
+</body>
+<script>
+function callJS(){
+	alert("Android 调用了JS方法");
+}
+function getCircleArea(r){
+    return Math.PI * r * r;
+}
+function callAndroid(){
+    test.hello("lisa");
+}
+function jumpActivity(){
+    jump.jump();
+}
+
+</script>
+</html>

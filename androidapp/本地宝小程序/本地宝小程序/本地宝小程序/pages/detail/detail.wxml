@@ -1,0 +1,24 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail">
+  <image src="{{detailData.images[0]}}"></image>
+  <view class="infos">
+    <view class="title">{{detailData.name}}</view>
+    <view>电话：{{detailData.phone}}</view>
+    <view>地址：{{detailData.address}}</view>
+    <view>营业时间：{{detailData.businessHours}}</view>
+  </view>
+  <view class="box-list">
+    <view class="list" wx:for="{{detailData.comments}}" wx:for-item="dItem" wx:key="index">
+      <view class="user">
+        <view class="user-left">{{dItem.name}}</view>
+        <view class="user-time">
+          <text>{{dItem.rating}}</text>
+          <text>{{dItem.date}}</text>
+        </view>
+      </view>
+      <view class="comtent">
+        {{dItem.content}}
+      </view>
+    </view>
+  </view>
+</view>

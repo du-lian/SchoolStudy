@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragment.LocalFragment"
+    android:orientation="vertical">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp">
+       <ListView
+           android:id="@+id/main_listview"
+           android:layout_width="0.5dp"
+           android:layout_height="match_parent"
+           android:visibility="visible"
+           />
+
+       <ImageView
+           android:id="@+id/iv_cover_simple"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:layout_alignBottom="@+id/linearLayout"
+           android:src="@drawable/play_page_default_cover"/>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/linearLayout"
+           android:layout_toRightOf="@+id/iv_cover_simple"
+           android:orientation="horizontal"
+           android:layout_marginTop="5dp"
+           android:layout_marginLeft="5dp">
+
+           <TextView
+               android:id="@+id/item_mymusic_postion"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"
+               android:text="1"
+               android:gravity="center"
+               android:textColor="#0d0c0c"
+               android:textSize="18sp" />
+
+           <TextView
+               android:id="@+id/item_mymusic_song"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="歌曲名"
+               android:textColor="#0d0c0c"
+               android:layout_marginTop="5dp"
+               android:layout_marginLeft="5dp"
+               android:layout_marginRight="5dp"
+               android:textSize="20dp" />
+
+
+           <TextView
+               android:id="@+id/item_mymusic_singer"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:layout_marginLeft="5dp"
+               android:layout_below="@+id/item_mymusic_song"
+               android:text="歌手"
+
+               android:textColor="#0d0c0c"
+               android:textSize="20sp" />
+       </LinearLayout>
+
+
+
+
+   </RelativeLayout>
+
+
+</LinearLayout>

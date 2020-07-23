@@ -1,0 +1,39 @@
+<!-- 头部部分 -->
+<view class="header">
+  <image class="header-logo" src="http://p2.qhmsg.com/t01ecc3b6b24e7bdbd8.png"></image>
+  <text class="header-title">分类</text>
+</view>
+
+<!--  category部分 -->
+<view class="category">
+  <!-- category部分左边 -->
+  <view class="category-left">
+    <block wx:for="{{category}}" wx:key="index">
+      <view bindtap="changeTab" data-index="{{index}}"  data-id="{{item.id}}" class="category-left-item {{index===activeIndex?'active':''}}">{{item.name}}
+      </view>
+    </block>
+  </view>
+  <!-- category部分右边 -->
+  <view class="category-right">
+
+    <swiper wx:if="{{spread.length>0}}" class="category-right-swiper" indicator-dots="{{spread.length>1}}" autoplay circular>
+      <block wx:for="{{spread}}" wx:key="index">
+        <swiper-item class="category-right-swiper-item">
+          <image class="category-right-swiper-img" mode="widthFix" src="{{item.pic}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+
+
+
+    <view class="category-right-list">
+      <block wx:for="{{shop}}" wx:key="index">
+        <view class="category-right-list-item" bindtap="gotoPage" data-url="{{item.url}}">
+          <image class="category-right-list-item-image" src="{{item.pic}}"></image>
+          <view class="category-right-list-item-title">{{item.name}}</view>
+        </view>
+      </block>
+    </view>
+
+  </view>
+</view>

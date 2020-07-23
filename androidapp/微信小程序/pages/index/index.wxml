@@ -1,0 +1,162 @@
+<!-- 头部部分 -->
+<view class="header">
+  <image class="header-logo" src="http://p2.qhmsg.com/t01ecc3b6b24e7bdbd8.png"></image>
+  
+</view>
+
+
+<!-- 轮播图部分 -->
+<view class="nav">
+  <swiper indicator-dots autoplay circular interval="3000" indicator-color="rgba(255,255,255,.5)" indicator-active-color="#ffffff">
+    <block wx:for="{{imgUrls}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 接口部分 -->
+<view class="entry">
+  <view class="entry-list">
+    <block wx:for="{{entryArray}}" wx:key="index">
+      <view class="entry-list-item">
+        <image class="entry-list-item-image" src="{{item.imgUrl}}" on></image>
+        <view class="entry-list-item-title">{{item.title}}</view>
+      </view>
+
+    </block>
+  </view>
+</view>
+
+<!-- 分割物 -->
+<view class="spiler"></view>
+
+
+<!-- 手机软件 -->
+<view class="softward">
+  <view class="softward-title">手机软件</view>
+  <view class="softward-list">
+    <block wx:for="{{softwardArray}}" wx:key="index">
+      <view class="softward-list-item">
+        <image class="softward-list-item-image" src="{{item.imgUrl}}"></image>
+        <view class="softward-list-item-title">{{item.title}}</view>
+        <view class="softward-list-item-size">{{item.size}}</view>
+        <view class="softward-list-item-download">{{item.download}}</view>
+      </view>
+
+    </block>
+
+
+
+  </view>
+</view>
+
+<view class="softward-row-list">
+  <block wx:for="{{softwardrowArray}}" wx:key="index">
+    <view class="softward-row-list-item">
+      <image class="softward-row-list-image" src="{{item.imgUrl}} "></image>
+      <text class="softward-row-list-title">{{item.title}}</text>
+    </view>
+  </block>
+</view>
+<!-- 分割物 -->
+<view class="spiler"></view>
+
+<!-- 智能硬件 -->
+<view class="intelligent">
+  <view class="intelligent-title">智能硬件</view>
+  <view class="intelligent-capacity-list">
+    <!-- 智能硬件上部分 -->
+    <view class="intelligent-capacity-list-top">
+      <!-- 智能硬件上部分左边-->
+      <view class="intelligent-capacity-list-top-left">
+        <view class="intelligent-capacity-list-title">360家庭防火墙路由器5S
+        </view>
+        <view class="intelligent-capacity-list-dis">为家守护的黑科技路由</view>
+        <view class="intelligent-capacity-list-price">199元</view>
+        <image class="intelligent-capacity-list-img" src="//p2.ssl.qhimg.com/t01c197fe3ac30ff1ef.png"></image>
+      </view>
+      <!-- 智能硬件上部分右边-->
+      <view class="intelligent-capacity-list-top-right">
+        <!-- 智能硬件上部分右边上面-->
+        <view class="intelligent-capacity-list-top-right-top">
+          <view class="intelligent-capacity-list-right-title">360AI音箱MAX－M1</view>
+          <text class="intelligent-capacity-list-right-dis">澎湃音质 双重智能</text>
+          <image class="intelligent-capacity-list-right-img" src="//p3.ssl.qhimg.com/t013329bb6b92d78417.png"></image>
+          <view class="intelligent-capacity-list-right-price">199元</view>
+        </view>
+        <!-- 智能硬件上部分右边下面-->
+        <view class="intelligent-capacity-list-top-right-botton">
+          <view class="intelligent-capacity-list-right-title">360可视门铃</view>
+          <text class="intelligent-capacity-list-right-dis">家庭安全的最佳守门员</text>
+          <image class="intelligent-capacity-list-right-img" src="//p1.ssl.qhimg.com/t0196759c96bd031f8f.png"></image>
+          <view class="intelligent-capacity-list-right-price">399元</view>
+        </view>
+      </view>
+
+    </view>
+    <!-- 智能硬件下部分 -->
+    <view class="intelligent-capacity-list-button">
+
+      <block wx:for="{{intelligentArray}}" wx:key="index">
+        <view class="intelligent-capacity-list-button-item">
+          <view class="intelligent-capacity-list-title">{{item.title}}
+          </view>
+          <view class="intelligent-capacity-list-dis">{{item.dis}}</view>
+          <view class="intelligent-capacity-list-price">{{item.price}}</view>
+          <image class="intelligent-capacity-list-img" src="{{item.imgStr}}"></image>
+        </view>
+      </block>
+
+      <view class="intelligent-capacity-list-button-item-more">
+        <image class="intelligent-capacity-list-more" src="//p1.ssl.qhmsg.com/t01f8ae6ea3d7f727ff.png"></image>
+        </view>
+    </view>
+  </view>
+
+</view>
+
+<!-- 分割物 -->
+<view class="spiler"></view>
+
+<!-- 用户服务 -->
+<view class="user">
+  <view class="user-title"> 用户服务</view>
+  <view class="user-list">
+    <block wx:for="{{userArray}}" wx:key="index">
+      <view class="user-list-item">
+        <view class="user-list-item-title">{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+  
+</view>
+
+
+<!-- 分割物 -->
+<view class="spiler"></view>
+
+<!-- 搜索 -->
+<view class="footer">
+  <view class="footer-search">
+    <form action="//m.so.com/s"> 
+      <input class="footer-search-text" type="text" placeholder="搜一下"></input>
+      <image class="footer-search-icon" src="//p1.ssl.qhmsg.com/t01dc430e8c4fbc2aee.png" ></image>
+      <button class="footer-search-btn" form-type="submit" >搜一下</button>
+    </form>
+  </view>
+
+  <view class="foot-list">
+    <view class="foot-list-item">登陆</view>
+    <view class="foot-list-item">注册</view>
+    <view class="foot-list-item">电脑版</view>
+    <view class="foot-list-item">会员商城</view>
+
+  </view>
+
+
+  <view class="footer-dis">
+    © 360.com 奇虎360 京ICP备08010314号-6</view>
+  
+</view>
