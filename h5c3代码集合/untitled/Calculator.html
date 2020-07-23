@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>alculator</title>
+    <style>
+        input{
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+        <form>
+            <input type="number" id="num1" >
+            <input type="text" id="xuanxiang" list="scorp">
+            <datalist id="scorp">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </datalist>
+            <input type="number" id="num2">=
+            <input type="number" id="result" >
+            <button onclick="count()">计算</button>
+
+        </form>
+
+</body>
+</html>
+<script>
+    function count(){
+        var num1 = parseInt('num1').value;
+        var num2 = parseInt('num2').value;
+        var scort = document.getElementById(scort).value;
+        var result = document.getElementById(result);
+        if(scort=="+"){
+            result.value = num1+num2;
+        }else if(scort =="-"){
+            result.value = num1-num2;
+        }else if(scort =="*"){
+            result.value = num1*num2;
+        }else if(scort =="/"){
+            result.value = num1/num2;
+        }
+    }
+</script>

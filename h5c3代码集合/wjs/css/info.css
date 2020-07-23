@@ -1,0 +1,36 @@
+.wjs_info{
+    height: 275px;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #cccccc;
+    /*background: black;*/
+
+}
+
+.wjs_info >.container> .row{
+    /*background: yellow;*/
+    margin-top: 50px;
+}
+
+.wjs_info  .box_left{
+    float: left;
+    height: 70px;
+    line-height: 70px;
+    /*background: black;*/
+}
+
+.wjs_info  .box_left i{
+    font-size: 26px;
+}
+
+.wjs_info .box_right{
+    float: left;
+}
+
+.wjs_info .box_botton{
+    margin-top: 10px;
+}
+
+.wjs_info a:hover{
+    color: #ee4822;
+}

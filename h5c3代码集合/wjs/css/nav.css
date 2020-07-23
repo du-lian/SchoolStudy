@@ -1,0 +1,43 @@
+.wjs_nav{
+    height:80px;
+    border-bottom: none;
+}
+.wjs_nav .navbar-header a{
+    color: #777;
+    font-size:50px;
+    /*background-color: red;*/
+    height:80px;
+    line-height: 80px;
+    padding-top:0px;
+}
+.wjs_nav .navbar-nav{
+    font-size:15px;
+}
+
+.wjs_nav .navbar-nav li a{
+    height: 80px;
+    line-height:80px;
+    padding-top:0px;
+    color:#666;
+}
+.wjs_nav .navbar-nav li a:hover{
+    color:#666;
+    border-bottom: 2px solid red;
+}
+.wjs_nav .navbar-nav .active a{
+    background-color: transparent;
+    border-bottom:2px solid red;
+}
+.wjs_nav .navbar-nav .active a:hover{
+    background-color: transparent;
+}
+
+.wjs_nav .navbar-header .navbar-brand{
+    font-size: 32px;
+    color: red;
+}
+
+.wjs_nav .navbar-header .navbar-brand span:last-child{
+
+    color: black;
+}

@@ -1,0 +1,24 @@
+/* 预约开始 */
+.wjs_book{
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+    line-height: 80px;
+    font-size: 16px;
+}
+
+.wjs_book> .container .num{
+    color: red;
+}
+
+.wjs_book> p> a{
+    text-decoration: none;
+}
+
+.wjs_book> p> a:last-child{
+    color: #0f0f0f;
+}
+
+.wjs_book> p> a:last-child:hover{
+    color: #2aabd2;
+}

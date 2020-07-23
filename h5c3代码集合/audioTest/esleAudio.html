@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简单得播放器</title>
+</head>
+
+<body>
+<div  class="test" style="text-align: center" >
+<video src="audio/薛之谦%20-%20丑八怪.mp4"  controls id="audio1"></video><br>
+<button id="Play" onclick="btnPlay()">播放</button>
+<button id="Speed" onclick="btnSpeed(5)">快进5秒</button>
+<button id="Back" onclick="btnBack(5)">退后5秒</button>
+<button id="AddVolume" onclick="btnAdd(0.1)">音量+</button>
+<button id="RedVolume" onclick="btnRed(0.1)">音量-</button>
+</div>
+
+<script>
+    var audio1 = document.getElementById("audio1");
+    function btnPlay() {
+        if (audio1.paused){
+             var btn1 = document.getElementById("Play");
+             audio1.play();
+             btn1.innerText = "停止";
+        }else{
+             var btn1 = document.getElementById("Play");
+            audio1.pause();
+             btn1.innerText = "播放";
+        }
+    }
+
+    function btnAdd(mun){
+        audio1.volume +=mun;
+    }
+
+    function btnRed(mun){
+        audio1.volume-=mun;
+    }
+
+    function btnSpeed(mun1) {
+        var currentTime1 = audio1.currentTime;
+        audio1.currentTime = currentTime1 + mun1;
+    }
+
+    function btnBack(mun1) {
+        var currentTime1 = audio1.currentTime;
+        audio1.currentTime = currentTime1 - mun1;
+    }
+</script>
+</body>
+
+
+</html>

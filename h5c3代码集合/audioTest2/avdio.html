@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简单的时间表</title>
+</head>
+<link rel="stylesheet" href="css/iconfont.css">
+<link rel="stylesheet" href="css/index.css">
+<body>
+<figure>
+    <figcption>自定义播放器</figcption>
+     <div class="player">
+         <!--数据源-->
+         <video src="video/袁娅维%20-%20说散就散.mp4"></video>
+
+         <!--播放组件-->
+         <div class="controlsbox">
+             <!--播放-->
+             <div class="play">
+                 <a href="#" class="switch iconfont icon-play"></a>
+             </div>
+
+             <!--进程-->
+             <div class="progress"></div>
+                    <div class="curr-progress"></div>
+             <!--播放时间表-->
+             <div class="time">
+                        <span id="curr-time">00:00:00</span>/<span id="total-time">00:00:00</span>
+             </div>
+
+             <!--播放的放大与缩小-->
+             <div class="boost">
+                 <a href="#" class="extend iconfont icon-icon--"></a>
+             </div>
+         </div>
+
+     </div>
+
+</figure>
+
+</body>
+</html>
+<script src="lib/index.js" type="text/javascript"></script>

@@ -1,0 +1,103 @@
+.wjs_product{
+    height: 432px;
+    background: #f0f0f0;
+
+}
+
+.wjs_product> .container> ul>li:hover{
+    border-bottom: 2px solid red;
+}
+.wjs_product> .container> ul>li:first-child{
+    border-bottom: 2px solid red;
+}
+
+
+.wjs_product> .container>.tab-content .product_info{
+    background: #4cae4c;
+    height: 150px;
+    position: relative;
+}
+
+.wjs_product> .container>.tab-content .active_first{
+     background: red;
+ }
+.wjs_product> .container>.tab-content .product_info .product_info_left{
+    height: 100%;
+    width: 75%;
+    float: left;
+    border-right: 1px dashed #cccccc;
+}
+.wjs_product> .container>.tab-content .product_info .product_info_left h4{
+    text-align: center;
+    color: white;
+}
+.wjs_product> .container>.tab-content .product_info   dd{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.wjs_product> .container>.tab-content .product_info   dt{
+    font-size: 10px;
+    color: #c0c0c0;
+}
+
+
+.wjs_product> .container>.tab-content .product_info .product_info_right{
+    width: 25%;
+    height: 100%;
+    float: right;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+
+}
+
+.wjs_product> .container>.tab-content .product_info .product_info_right p{
+
+    position: relative;
+    top: 20%;
+}
+
+.wjs_product> .container>.tab-content .product_info .product_info_right p strong{
+    font-size: 50px;
+    color: white;
+}
+.wjs_product> .container>.tab-content .product_info .product_info_right p sub{
+    color: white;
+}
+.wjs_product> .container>.tab-content .product_info .product_info_right p span{
+    font-size: 12px;
+    color: white;
+}
+
+.wjs_product .product_info .product_info_right::before{
+    background-color: #f0f0f0;
+    border-radius: 7px;
+    content: ' ';
+    display: block;
+    height: 14px;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    width: 14px;
+}
+
+.wjs_product .product_info .product_info_right::after{
+    background-color: #f0f0f0;
+    border-radius: 7px;
+    content: ' ';
+    display: block;
+    height: 14px;
+    position: absolute;
+    bottom: -7px;
+    left: -7px;
+    width: 14px;
+    box-shadow: 0 2px 2px #c0c0c0 inset;
+}
+
+.wjs_product .product_botton{
+    margin-top: 10px;
+}
+.wjs_product .col-lg-4{
+    margin-top: 10px;
+}

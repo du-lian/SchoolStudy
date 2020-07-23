@@ -1,0 +1,73 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+figure{
+    font-size: 22px;
+    font-family: "Microsoft YaHei UI";
+    text-align: center;
+    margin-top: 20px;
+}
+figcaption{
+    margin: 10px;
+}
+
+.player{
+    height:240px;
+    width: 426px;
+    position: relative;
+}
+/*播放组件*/
+.controlsbox{
+    height: 30px;
+    width: 400px;
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    background: green;
+}
+/*播放*/
+.play{
+    position: absolute;
+    left: 4px;
+    bottom: 3px;
+}
+/*进程*/
+.progress{
+    width: 350px;
+    height: 5px;
+    background: white;
+    position: absolute;
+    left: 24px;
+    bottom: 5px;
+}
+
+.curr-progress{
+    /*width:50%;*/
+    width: 0%;
+    height:5px;
+    background-color: green;
+    position: absolute;
+    left: 24px;
+    bottom: 5px;
+}
+
+/*时间*/
+.time{
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/*放大*/
+.boost{
+    position: absolute;
+    right: 2px;
+    bottom: 3px;
+}
+
+a{
+    text-decoration: none;
+}

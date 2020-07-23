@@ -1,0 +1,67 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.bac{
+    background: url("../img/bg.jpg");
+    width: 538px;
+    height: 370px;
+    position: relative;
+}
+
+.calendar{
+    width: 400px;
+    height: 320px;
+    position: absolute;
+    left:15px;
+    top: 60px;
+    border-top: 1px solid blue;
+}
+
+.calendar ul{
+
+    float: left;
+    border-top: 1px solid #999;
+    cursor: pointer;
+
+}
+
+.calendar ul li{
+    width: 50px;
+    height: 50px;
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    margin-right: 4px;
+
+}
+/*星期*/
+.calendar ul:first-child li{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-right: 24px;
+}
+
+.calendar ul:first-child li:first-child{
+    margin-left: 7px;
+}
+
+.calendar ul li>b{
+    display: block;
+    height: 26px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.calendar ul li >small{
+    color: #999;
+    font-size: 12px;
+    font-style: normal;
+}
+
+.calendar ul li:hover{
+    border:0.1px  solid blue;
+}

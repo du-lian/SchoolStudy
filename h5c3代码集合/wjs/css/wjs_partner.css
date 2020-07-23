@@ -1,0 +1,26 @@
+.wjs_partner{
+    /*width: 100%;*/
+    /*height: 220px;*/
+    border-top: 1px solid #cccccc;
+}
+
+.wjs_partner .partner-list{
+    /*height: 55px;*/
+    padding: 0;
+}
+
+.wjs_partner .partner-list li{
+        list-style: none;
+        float: left;
+        margin-left: 20px;
+        display: inline-block;
+     width: calc(100%/9);
+}
+
+.wjs_partner .partner-list li a{
+    width: 50px;
+    height: 50px;
+    font-size: 100px;
+    text-decoration: none;
+}
+

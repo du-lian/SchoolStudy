@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student</title>
+    <style type="text/css">
+        form{
+            width: 300px;
+            margin: 20px auto;
+            font-family: '微软雅黑';
+        }
+        label{
+            font-size: 16px;
+            display: block;
+
+        }
+
+        input{
+            font-size: 16px;
+            display: block;
+            width: 300px;
+        }
+    </style>
+
+    <script language="JavaScript" type="text/javascript">
+        var code;
+        function createCode() {
+            code="";
+            var codeLength = 6; //验证码的长度
+            var checkCode  = document.getElementById("checkCode");
+            var selectChar = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
+
+            for (var i = 0; i<codeLength; i++){
+                var charIndex = Math.floor(Math.random()*36);
+                code += selectChar[charIndex];
+            }
+
+            if (checkCode){
+                checkCode.value = code;
+            }
+        }
+
+        function validate() {
+            var inputCode = document.getElementById("verification").value;
+            if(inputCode.length <=0){
+                alert("请输入验证码！")
+            }else if(inputCode != code){
+                alert("验证码错误！");
+            }else{
+                alert("😊 ok");
+            }
+        }
+    </script>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legengd>学生档案</legengd>
+        <label for="username">学生姓名</label><input type="text" id="username" required="required">
+        <label for="telephone">手机号</label><input type="tel" id="telephone" required="required" pattern="1[3,4,5,6,7,8,9]\d{9}">
+        <label for="email">邮箱</label><input type="email" id="email">
+        <label for="collect">所属学院</label>
+        <select id="collect">
+            <option>IOS学院</option>
+            <option>Web移动开发学院</option>
+            <option>javaEE+大数据学院</option>
+            <option>大前端学院</option>
+        </select>
+        <label for="score">入学成绩</label><input type="number" id="score" min="0" max="100" step="1" required>
+        <label for="time">入学日期</label><input type="date" id="time">
+        <label for="graduate">毕业日期</label><input type="date" id="graduate">
+        <label for="verification">验证码</label><input type="text" id="verification"><input type="text" onclick="createCode()" readonly id="createCode"><br>
+        <input type="submit" value="保存" onclick="validate()">
+    </fieldset>
+</form>
+
+</body>
+</html>

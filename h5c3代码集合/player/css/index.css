@@ -1,0 +1,52 @@
+
+
+*{
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+
+
+.player{
+    width:600px;
+    height:600px;
+    border-radius:50%;
+    overflow:hidden;
+    background: url("../images/music.jpg");
+    position: relative;
+}
+
+.component{
+    width: 200px;
+    height: 25px;
+    position: absolute;
+    left: 200px;
+    bottom: 200px;
+    background: pink;
+}
+
+.component .mh-bd{
+    width: 180px;
+    line-height: 18px;
+    font-size: 14px;
+    color: green;
+    text-align: center;
+    max-height: 150px;
+    overflow: auto;
+    position: absolute;
+    left: 14px;
+    bottom: -162px;
+    display: none;
+}
+
+.component a{
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.component  .bottom{
+    position: absolute;
+    bottom: -194px;
+    left: 94px;
+}
